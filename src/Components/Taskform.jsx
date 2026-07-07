@@ -6,14 +6,28 @@ export default function Taskform({addTask}) {
     const [priority, setPriority] = useState('medium');
     const [category, setCategory] = useState('general');
 
-    const handelSubmit=(e)=> {
-        e.preventDefault();
-        addTask({text:task, priority,category,completed:false});
 
-        setTask('');
-        setPriority('medium');
-        setCategory('general');
-    }   
+    const handelSubmit = (e) => {
+    e.preventDefault();
+
+    // Prevent empty or whitespace-only tasks
+    if (task.trim() === "") {
+        alert("Please enter a task!");
+        return;
+    }
+
+    addTask({
+        text: task,
+        priority,
+        category,
+        completed: false
+    });
+
+    setTask('');
+    setPriority('medium');
+    setCategory('general');
+}
+
 
   return (
     <form className='task-form' onSubmit={handelSubmit}>
