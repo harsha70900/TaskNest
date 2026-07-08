@@ -22,17 +22,6 @@ A modern and responsive **Task Management Application** built with **React.js** 
 ---
 <img width="940" height="473" alt="image" src="https://github.com/user-attachments/assets/8af4cfc0-77b9-409e-a88f-81ab5c15dc89" />
 
-
-Example:
-
-```
-assets/
-│── home.png
-│── edit-task.png
-```
-
-Then use:
-
 ---
 
 ## 🛠️ Tech Stack
